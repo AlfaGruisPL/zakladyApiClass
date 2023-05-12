@@ -57,6 +57,12 @@ ZakladyApiClassModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({});
 })();
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(ZakladyApiClassModule, { declarations: [ZakladyApiClassComponent], exports: [ZakladyApiClassComponent] }); })();
 
+class Test {
+    constructor() {
+        this.test = "test";
+    }
+}
+
 /*
  * Public API Surface of zaklady-api-class
  */
@@ -65,5 +71,5 @@ ZakladyApiClassModule.ɵinj = /*@__PURE__*/ i0.ɵɵdefineInjector({});
  * Generated bundle index. Do not edit.
  */
 
-export { ZakladyApiClassComponent, ZakladyApiClassModule, ZakladyApiClassService };
+export { Test, ZakladyApiClassComponent, ZakladyApiClassModule, ZakladyApiClassService };
 //# sourceMappingURL=zaklady-api-class.mjs.map
