@@ -3,5 +3,41 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "zakladyApiClass": {
+      "projectType": "library",
+      "root": "projects/zaklady-api-class",
+      "sourceRoot": "projects/zaklady-api-class/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/zaklady-api-class/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/zaklady-api-class/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/zaklady-api-class/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/zaklady-api-class/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "d974ffd8-1550-40f5-bb5a-d8ec9330c1d4"
   }
 }
