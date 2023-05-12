@@ -33,11 +33,23 @@
               "zone.js/testing"
             ]
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/zaklady-api-class/**/*.ts",
+              "projects/zaklady-api-class/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "d974ffd8-1550-40f5-bb5a-d8ec9330c1d4"
+    "analytics": "d974ffd8-1550-40f5-bb5a-d8ec9330c1d4",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
